@@ -1,0 +1,55 @@
+extends template
+
+block title
+	title Profile
+
+block content
+	include header
+
+	// BEGIN profile
+	section.profile
+		.profile__wrap
+			.profile__user-info.fl.fl--just-bet
+				.user
+					a.avatar--profile.avatar(href="profile.html")
+						img.avatar__img(src="img/photo.png" alt="photo")
+					a.user__name.text--color-black.let-space--01em(href="profile.html") Sarah White
+					.user__info-box.fl.fl--col-wrap
+						span.user__span-info.user__span-info--job.let-space--01em 3D Artist
+						span.user__span-info.user__span-info--city.let-space--01em Haifa, Israel
+				.profile__info.fl.fl--col-wrap
+					.profile__header.fl.fl--just-bet
+						.profile__data-block.data-user.fl.fl--just-bet
+							a.data-user__block.data-user__block--wishes.text--color-black.fl.fl--col-wrap(href="#")
+								span.data-user__span--count 234
+								span.data-user__span--name.let-space--01em Wishes
+							a.data-user__block.data-user__block--friends.text--color-black.fl.fl--col-wrap(href="#")
+								span.data-user__span--count 145
+								span.data-user__span--name.let-space--01em Friends
+						a.profile__btn.btn--blue.btn.let-space--01em(href="#") Follow
+					include hashtags
+			.profile__control.control.fl
+				ul.filter.fl.fl--just-ar
+					li.filter__li
+						a.filter__link.text--color-ac.let-space--01em(href="#") All
+					li.filter__li
+						a.filter__link.text--color-ac.let-space--01em(href="#") Need
+					li.filter__li
+						a.filter__link.text--color-ac.let-space--01em(href="#") Want
+					li.filter__li
+						a.filter__link.text--color-ac.let-space--01em(href="#") Given
+				.tabs.fl.fl--just-c.fl--align-c
+					a.tabs__link.tabs__link--grid(href="#")
+						img(src="img/grid.png" alt="icon grid")
+					a.tabs__link.tabs__link--list(href="#")
+						img(src="img/list.png" alt="icon list")
+			include want-gallery
+	// END profile
+
+	include modal
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/script.js"></script>

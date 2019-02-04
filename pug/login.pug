@@ -1,0 +1,30 @@
+extends template
+
+block title
+	title Login
+
+block content
+	// BEGIN login
+	section.login
+		.login__wrap.fl.fl--col-wrap.fl--just-bet
+			a.logo--login.logo(href="#" title="logo")
+				img(src="img/logo.svg" alt="logo")
+			.login__body
+				.login__check-in
+					form.form(action="#")
+						.form__inputs-wrap.fl.fl--col-wrap
+							input.form__input.form__input--name.let-space--01em(type="text" required placeholder="Username")
+							.form__password
+								input.form__input.form__input--pass.let-space--01em(type="password" required placeholder="Password")
+								span.form__span--visible-pass
+						button.form__submit.let-space--01em.btn.btn--blue(type="submit") Login
+					a.login__link-foggot.text--color-ac.let-space--01em(href="#") Forgot your password?
+				.social--login.social.fl.fl--just-c
+					a.social__icon.social__icon--facebook(href="#")
+						img(src="img/facebook.png" alt="facebook")
+					a.social__icon.social__icon--google
+						img(src="img/google.png" alt="google")
+			.login__sign-wrap.fl.fl--just-c
+				span.login__sign-up.login__sign-up--text.let-space--01em.text--color-white Need an account?
+				a.login__sign-up.login__sign-up--link.text--color-white(href="#") Sign up here
+	// END login

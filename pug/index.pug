@@ -1,0 +1,92 @@
+extends template
+
+block title
+	title News feed
+
+block content
+	include header
+
+	// BEGIN news
+	section.news
+		.news__wrap
+			.news__block
+				.user.user--news.fl.fl--align-end
+					a.avatar--news.avatar(href="profile.html")
+						img.avatar__img(src="img/photo.png" alt="photo")
+					.user__info-box.user__info-box--news.fl.fl--col-wrap
+						a.user__name.user__name--news.text--color-black.let-space--01em(href="profile.html") Sarah White
+						a.user__label--need-it.text--color-black.let-space--01em(href="#") Need it
+				.news__img-box
+					img.news__img(src="img/image-news.png" alt="image-news")
+					.news__img-control.fl.fl--just-bet.fl--align-c
+						.news__icons-left.fl
+							a.news__icon.news__icon--present(href="#" title="present")
+								img(src="img/present.png" alt="present")
+							a.news__icon.news__icon--community(href="#" title="community")
+								img(src="img/community.png" alt="community")
+						.news__icons-likes.fl.fl--align-c
+							a.news__icon.news__icon--like(href="#" title="like")
+								img(src="img/like.png" alt="like")
+							span.news__count-likes.let-space--01em 129 Likes
+						.news__icons-right.fl
+							a.news__icon.news__icon--add(href="#" title="add")
+								img(src="img/add.png" alt="add")
+							a.news__icon.news__icon--basket(href="#" title="basket")
+								img(src="img/basket.png" alt="basket")
+				.descrip
+					span.descrip__title Nike Air Force 1
+					p.descrip__text The legend lives on in the Nike Air Force 1, with an iconic look and plenty of cushioning...
+				.comment
+					a.comment__count-all.text--color-999(href="#") View all 2 comments
+					.comment__box
+						.comment__item.fl
+							span.comment__name virtuoz
+							.comment__message.fl
+								a.comment__link-user(href="index.html") @sarah white
+								p.comment__text Good choice :)
+					.comment__add.fl
+						a.avatar.avatar--comment(href="#")
+							img.avatar__img(src="img/photo.png" alt="avatar comment")
+						textarea.comment__textarea(cols="30" rows="10" placeholder="Add a comment...")
+					span.comment__date.text--color-999 6 april
+			.news__block
+				.user.user--news.fl.fl--align-end
+					a.avatar--news.avatar(href="profile.html")
+						img.avatar__img(src="img/photo.png" alt="photo")
+					.user__info-box.user__info-box--news.fl.fl--col-wrap
+						a.user__name.user__name--news.text--color-black.let-space--01em(href="profile.html") Sarah White
+						a.user__label--need-it.text--color-black.let-space--01em(href="#") Need it
+				.news__img-box
+					img.news__img(src="img/image-news.png" alt="image-news")
+					.news__img-control.fl.fl--just-bet.fl--align-c
+						.news__icons-left.fl
+							a.news__icon.news__icon--present(href="#" title="present")
+								img(src="img/present.png" alt="present")
+							a.news__icon.news__icon--community(href="#" title="community")
+								img(src="img/community.png" alt="community")
+						.news__icons-likes.fl.fl--align-c
+							a.news__icon.news__icon--like(href="#" title="like")
+								img(src="img/like.png" alt="like")
+							span.news__count-likes.let-space--01em 129 Likes
+						.news__icons-right.fl
+							a.news__icon.news__icon--add(href="#" title="add")
+								img(src="img/add.png" alt="add")
+							a.news__icon.news__icon--basket(href="#" title="basket")
+								img(src="img/basket.png" alt="basket")
+				.descrip
+					span.descrip__title Nike Air Force 1
+					p.descrip__text The legend lives on in the Nike Air Force 1, with an iconic look and plenty of cushioning...
+				.comment
+					a.comment__count-all.text--color-999(href="#") View all 2 comments
+					.comment__box
+						.comment__item.fl
+							span.comment__name virtuoz
+							.comment__message.fl
+								a.comment__link-user(href="index.html") @sarah white
+								p.comment__text Good choice :)
+					.comment__add.fl
+						a.avatar.avatar--comment(href="#")
+							img.avatar__img(src="img/photo.png" alt="avatar comment")
+						textarea.comment__textarea(cols="30" rows="10" placeholder="Add a comment...")
+					span.comment__date.text--color-999 6 april
+	// END news

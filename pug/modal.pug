@@ -1,0 +1,114 @@
+// BEGIN modal-bg
+.modal-bg
+// END modal-bg
+// BEGIN modal add-wishes
+.modal.modal--add-wish
+	h2.modal__title.let-space--01em Add wish
+	form.modal__form(action="#")
+		.write-set.modal__write-set.modal__write-set--url.fl.fl--col-wrap
+			label.write-set__title.text--color-ac(for="url") Add a link from the store
+			input.write-set__input.write-set__field#url(type="url" required)
+		.modal__images.fl.fl--just-c
+			a.modal__img.modal__img--front(title="front image which to view in your wish" href="#")
+			a.modal__img.modal__img--add(title="add image what you wish" href="#")
+		.modal__write-set.write-set.modal__write-set--name.fl.fl--col-wrap
+			label.write-set__title.text--color-ac(for="name") Product name
+			input.write-set__input.write-set__field#name(type="text" required)
+		.btns-control.modal__btns-control.fl.fl--just-bet
+			a.btns-control__btn.btns-control__btn--need.btn.let-space--01em(href="#") Need
+			a.btns-control__btn.btns-control__btn--want.btn.let-space--01em(href="#") Want
+			a.btns-control__btn.btns-control__btn--given.btn.let-space--01em(href="#") Given
+		.modal__write-set.write-set.modal__write-set--descrip.fl.fl--col-wrap
+			label.write-set__title.text--color-ac(for="descrip") Product description
+			textarea.write-set__textarea.write-set__field#descrip(type="text" required)
+		.modal__write-set.write-set.modal__write-set--tags.fl.fl--col-wrap
+			label.write-set__title.text--color-ac(for="tags") Write a caption, tags...
+			span.write-set__slogan I want this sneakers
+			textarea.write-set__textarea.write-set__field#tags(type="text" required)
+		button.modal__submit(href="#")
+	img.modal__close(alt="close" src="img/close.png")
+// END modal add-wish
+// BEGIN modal notification
+.modal.modal--list.modal--notification
+	h2.modal__title.let-space--01em Notification
+	ul.modal__ul
+		li.modal__item.user.fl
+			a.avatar--notification.avatar--note-no-request.avatar(href="profile.html")
+				img.avatar__img.avatar__img--notification(src="img/photo.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
+				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
+		li.modal__item.user.fl
+			a.avatar--notification.avatar--note-no-request.avatar(href="#")
+				img.avatar__img.avatar__img--notification(src="img/user-img1.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") vladimir_vjach
+				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
+		li.modal__item.user.fl
+			a.avatar--notification.avatar(href="#")
+				img.avatar__img.avatar__img--notification(src="img/user-img2.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") maksymbond
+				a.user__link.user__link--request.user__link--accept-request.let-space--01em(href="#") accepted your request
+		li.modal__item.user.fl
+			a.avatar--notification.avatar(href="#")
+				img.avatar__img.avatar__img--notification(src="img/user-img3.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") disorder
+				a.user__link.user__link--request.user__link--accept-request.let-space--01em(href="#") accepted your request
+		li.modal__item.user.fl
+			a.avatar--notification.avatar--note-no-request.avatar(href="#")
+				img.avatar__img.avatar__img--notification(src="img/user-img4.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") izushka
+				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
+		li.modal__item.user.fl
+			a.avatar--notification.avatar--note-no-request.avatar(href="profile.html")
+				img.avatar__img.avatar__img--notification(src="img/photo.png" alt="photo")
+			.user__links-wrap.user__links-wrap--notification.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
+				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
+	img.modal__close(alt="close" src="img/close.png")
+// END modal notification
+// BEGIN modal friend
+.modal.modal--list.modal--friend
+	h2.modal__title.let-space--01em Friends
+	ul.modal__ul
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="profile.html")
+				img.avatar__img.avatar__img--friend(src="img/photo.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em( href="#") Sarah White
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="#")
+				img.avatar__img.avatar__img--friend(src="img/user-img1.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") vladimir_vjach
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Vladimir Viacheslavovich
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="#")
+				img.avatar__img.avatar__img--friend(src="img/user-img2.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") maksymbond
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Maksym Bondarenko
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="#")
+				img.avatar__img.avatar__img--friend(src="img/user-img3.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") disorder
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Dmytriy Lehenkiy
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="#")
+				img.avatar__img.avatar__img--friend(src="img/user-img4.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") izushka
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Chernova Iuliia
+		li.modal__item.user.fl
+			a.avatar--friend.avatar(href="profile.html")
+				img.avatar__img.avatar__img--friend(src="img/photo.png" alt="photo")
+			.user__links-wrap.user__links-wrap--friend.fl.fl--col-wrap
+				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
+				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em( href="#") Sarah White
+	img.modal__close(alt="close" src="img/close.png")
+// END modal friend
