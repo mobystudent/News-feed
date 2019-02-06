@@ -1,0 +1,54 @@
+.login
+	background: url(../img/login-bg.png) bottom/150% 30% no-repeat
+	padding: 60px 0 70px
+	font-size: 14px
+	height: 100vh
+	min-height: 700px
+	
+	@media screen and (min-device-width: 320px) and (min-device-height: 320px)
+		padding: 30px 0
+		
+	@media screen and (min-device-width: 576px) and (min-device-height: 320px)
+		padding: 30px 0
+		min-height: 100%
+		height: auto
+		
+	@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+		background: url(../img/login-bg.png) bottom/100% 30% no-repeat
+		padding: 50px 0 60px
+		font-size: 22px
+		
+	@media screen and (min-device-width: 576px) and (min-device-height: 768px)
+		background-size: 100% 30%
+		padding: 85px 0 155px
+		min-height: 1200px
+		height: 100vh
+		
+	@media screen and (min-width: 768px) and (min-device-width: 768px) and (min-device-height: 768px)
+		padding: 85px 0 140px
+
+	&__wrap
+		width: 250px
+		margin: 0 auto
+		height: 100%
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 320px)
+			min-height: 450px
+			
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			width: 412px
+
+	&__link-foggot
+		text-align: center
+		margin-bottom: 20px
+		color-darken(color-ac)
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			margin-bottom: 30px
+			
+		@media screen and (min-device-width: 576px) and (min-device-height: 768px)
+			margin-bottom: 55px
+
+	&__sign-up--link
+		font-family: robotobold, sans-serif
+		margin-left: 5px

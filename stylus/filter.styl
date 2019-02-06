@@ -1,0 +1,29 @@
+.filter
+	box-sizing: content-box
+	flex: 1 0 auto
+	padding: 0 10px
+	padding-right: 10px
+	
+	@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+		padding: 10px 0
+		margin-right: 30px
+		
+	@media screen and (min-width: 768px) and (min-device-width: 768px) and (min-device-height: 320px)
+		padding: 5px 10px
+
+	&__link
+		font: 14px robotolight, sans-serif;
+		padding: 10px
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			font-size: 22px
+			padding: 10px 20px
+			
+		@media screen and (min-width: 768px) and (min-device-width: 768px) and (min-device-height: 320px)
+			font-size: 18px
+
+		&:hover
+			color: #b8c5e5
+
+		&:active
+			color: darken(#b8c5e5,15%)

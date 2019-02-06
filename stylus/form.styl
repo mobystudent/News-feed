@@ -1,0 +1,73 @@
+.form
+	&__inputs-wrap
+		margin-bottom: 40px
+		
+		@media screen and (min-device-width: 320px) and (min-device-height: 576px)
+			margin-bottom: 50px
+			
+		@media screen and (min-device-width: 576px) and (min-device-height: 320px)
+			margin-bottom: 40px
+			
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			margin-bottom: 85px
+
+	&__input
+		border: none
+		border-bottom: 1px solid color-ac
+		width: 100%
+		padding: 5px 15px
+		placeholder(color-ac,14px)
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			font-size: 22px
+			padding: 10px 20px
+			box-shadow: 0 1px 0 0 #dedede
+			placeholder(color-ac,22px)
+
+		&--name
+			margin-bottom: 20px
+			
+			@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+				margin-bottom: 50px
+
+		&--pass
+			padding: 5px 35px 5px 15px
+			
+			@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+				padding: 10px 60px 10px 20px
+
+	&__password
+		position: relative
+
+	&__span--visible-pass
+		position: absolute
+		bottom: 2px
+		right: 2px
+		height: 12px
+		width: 22px
+		background: url(../img/eye.png) center/22px 12px no-repeat
+		cursor: pointer
+		padding: 5px
+		box-sizing: content-box
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			height: 19px
+			width: 33px
+			right: 12px
+			bottom: 12px
+			padding: 0
+			background-size: cover
+
+	&__submit
+		background: #b8c8e6
+		margin: 0 auto
+		display: block
+		font-size: 14px
+		padding: 10px 40px
+		margin-bottom: 15px
+		color-darken(#b8c8e6)
+		
+		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
+			font-size: 20px
+			padding: 10px 70px
+			margin-bottom: 25px
